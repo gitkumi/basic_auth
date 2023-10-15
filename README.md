@@ -1,9 +1,5 @@
-# BasicAuth
+# basic_auth
 
-Basic auth starter.
+Elixir/Phoenix Simple Authentication JSON API.
+If you need RBAC and multitenancy, check out [enterprise_auth](https://github.com/gitkumi/enterprise_auth)
 
-## Postgres
-
-```sh
-docker container rm postgres && docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
-```
