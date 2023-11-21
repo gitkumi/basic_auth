@@ -5,7 +5,7 @@ defmodule BasicAuth.MixProject do
     [
       app: :basic_auth,
       version: "0.1.0",
-      elixir: "~> 1.14",
+      elixir: "~> 1.15",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
@@ -48,7 +48,8 @@ defmodule BasicAuth.MixProject do
       {:resend, "~> 0.2"},
       {:cors_plug, "~> 3.0"},
       {:bodyguard, "~> 2.4"},
-      {:styler, "~> 0.9", only: [:dev, :test], runtime: false}
+      {:styler, "~> 0.9", only: [:dev, :test], runtime: false},
+      {:bandit, "~> 1.0"}
     ]
   end
 

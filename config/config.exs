@@ -13,6 +13,7 @@ config :basic_auth,
 
 # Configures the endpoint
 config :basic_auth, BasicAuthWeb.Endpoint,
+  adapter: Bandit.PhoenixAdapter,
   url: [host: "localhost"],
   render_errors: [
     formats: [json: BasicAuthWeb.ErrorJSON],
